@@ -1,3 +1,5 @@
+import argparse
+
 import re
 import time
 import pickle
@@ -38,7 +40,7 @@ def get_restaurant_list(lat, lng, items = 100):
         'x-apikey': 'iphoneap',
         'x-apisecret': 'fe5183cc3dea12bd0ce299cf110a75a2'
     }
-    params = {'items':items, 'lat':lat, 'lng':lng, 'order':'distance', 'page':0 ,'search':''}
+    params = {'items':items, 'lat':lat, 'lng':lng, 'order':ORDER_OPTION, 'page':0 ,'search':''}
     host = 'https://www.yogiyo.co.kr'
     path = '/api/v1/restaurants-geo/'
     url = host+path
@@ -130,7 +132,7 @@ def yogiyo_crawling(location):
 
     try:
         
-        restaurant_list = get_restaurant_list(location[0],location[1],100) # 해당 카테고리 음식점 리스트 받아오기
+        restaurant_list = get_restaurant_list(location[0],location[1],RESTAURANT_COUNT) # 해당 카테고리 음식점 리스트 받아오기
         
         for restaurant_id in restaurant_list:
             try:
@@ -188,7 +190,7 @@ def yogiyo_crawling(location):
 # 10. 요기요 크롤링 실행 함수
 def start_yogiyo_crawling():
 
-    locations = [[37.560873,126.9353833]]
+    locations = [[LAT,LON]]
     
     for location in locations:
         try:
@@ -196,6 +198,23 @@ def start_yogiyo_crawling():
         except Exception as e:
             print(e)
             pass
+
+
+parser = argparse.ArgumentParser(description='Arguments for Crawler')
+parser.add_argument('--order', required=False, default='distance', 
+    help='option for restaurant list order / choose one -> [rank, review_avg, review_count, min_order_value, distance, estimated_delivery_time]')
+parser.add_argument('--num', required=False, default=100, 
+    help='option for restaurant number')
+parser.add_argument('--lat', required=False, default=37.560873, 
+    help='latitude for search')
+parser.add_argument('--lon', required=False, default=126.9353833, 
+    help='longitude for search')
+args = parser.parse_args()
+
+ORDER_OPTION = args.order
+RESTAURANT_COUNT = int(args.num)
+LAT = float(args.lat)
+LON = float(args.lon)
 
 # 크롬 드라이버 경로 설정 (절대경로로 설정하는 것이 좋음)
 chromedriver = '/Users/byeongheon/programmers/crawler/chromedriver'
