@@ -12,3 +12,8 @@
   traffic제한 이런 문제가 크게 없는 사이트라고 생각합니다.
 - 코드가 driver.implicit_wait()랑 time.sleep()을 사용해서 깔끔하지는 않지만,
   잘 수정해서 서버에 넣으면 잘 돌아갈 것 같습니다. 
+  
+# csv. 내용
+- res_name, res_phone, res_address, res_food_type, res_point
+- res_name, res_phone, rev_create_date, rev_comment, review_point
+  
