@@ -4,6 +4,11 @@ import mysql_auth
 import pymysql
 import re
 from selenium import webdriver
+import argparse
+
+parser = argparse.ArgumentParser(description='input subway')
+parser.add_argument('--subway',type=str,required=True,help='검색할 지하철 이름')
+args = parser.parse_args()
 
 #기본 설정
 login = mysql_auth.info
@@ -200,7 +205,7 @@ driver = webdriver.Chrome('chromedriver',options=options)
 driver.implicitly_wait(10) 
 
 # 크롤링 실행 코드
-set_keyword('홍대입구역')
+set_keyword(args.subway)
 page_cnt = get_page_number()
 for k in range(1,page_cnt+1):
   go_to_page(k)
