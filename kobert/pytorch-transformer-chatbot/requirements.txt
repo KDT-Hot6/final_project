@@ -1,0 +1,8 @@
+mxnet
+gluonnlp
+konlpy
+python-mecab-ko
+chatspace==2.0.2
+tb-nightly
+future
+pathlib
