@@ -21,15 +21,11 @@ options.add_argument('window-size=1080, 720')
 
 driver = webdriver.Chrome('chromedriver', options=options)
 driver.implicitly_wait(5)
-driver.get(url='https://www.tripadvisor.co.kr/Restaurants-g294197-Seoul.html')
+driver.get(url="https://www.tripadvisor.co.kr/RestaurantSearch-g294197-oa{}-Seoul.html#EATERY_LIST_CONTENTS".format(
+    30 * (next_page_num1-1)))
 sleep(5)
 
-# set page
-if next_page_num1 != 1:
-    next_page = driver.find_element_by_link_text("{}".format(next_page_num1))
-    ActionChains(driver).key_down(Keys.LEFT_CONTROL).click(next_page).key_up(Keys.LEFT_CONTROL).perform()
-    driver.implicitly_wait(5)
-    sleep(3)
+
 next_page_num1 += 1
 
 # find a restaurant_list at the page
@@ -45,7 +41,7 @@ try:
             last_tab = driver.window_handles[-1]
             driver.switch_to.window(window_name=last_tab)
             driver.implicitly_wait(5)
-            sleep(3)
+            sleep(5)
 
             # the information of the restaurant
             res_name = driver.find_element_by_xpath('/html/body/div[2]/div[1]/div/div[3]/div/div/div[1]/h1').text
