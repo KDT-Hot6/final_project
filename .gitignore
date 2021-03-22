@@ -1,2 +1,7 @@
 *.csv
 data/
+preprocessing/data/
+.ipynb_checkpoints/
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+preprocessing/.ipynb_checkpoints/get_review-checkpoint.ipynb
