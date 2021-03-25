@@ -1,0 +1,21 @@
+@charset "UTF-8";
+table {
+	width: 100%;
+ 	border-collapse: collapse; 
+}
+
+table, tr {
+	border: 1px solid #cccccc;
+/*  	border: 1px solid black;  */
+}
+
+/* .row{ */
+/* 	border: 1px solid #cccccc; */
+/* } */
+
+textarea {
+	width: 100%;
+	resize: vertical;
+ 	border: 2px solid #dddddd; 
+/* 	border: 0; */
+}

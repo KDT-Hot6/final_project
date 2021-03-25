@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+button {
+	white-space: nowrap;
+}
+textarea,
+input,
+select,
+option {
+	font-size: 14px !important;
+}
+
+.intent_view {
+	padding: 10px;
+}
+.intent_view table {
+	width: 100%;
+}
+.intent_view table tr th {
+	text-align: left;
+}
+
+.intent_view_title,
+.intent_view_actions,
+.intent_view_contents {
+	padding: 5px;
+}
+.intent_view_title {
+	font-size: 24px;
+	font-weight: 600;
+}
+.intent_view_actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	background: #fff;
+	z-index: 9;
+	top: 0;
+}
+.input_entity_tag {
+	flex-wrap: nowrap !important;
+	padding-bottom: 4px;
+}
+.intent_view_contents {
+	padding-top: 50px;
+}
+.input_question_tags_wrap {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.input_question_tags_wrap .input_question_tag {
+	display: flex;
+}
+
+.input_answer_wrap,
+.input_question_tag {
+	padding-bottom: 4px;
+}
+.input_answer_wrap .input_answer {
+	resize: vertical;
+	height: 32px;
+	min-height: 32px;
+}
+
+.delete_question_wrap {
+	text-align: center;
+}
+
