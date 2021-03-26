@@ -21,6 +21,7 @@ class SearchView(APIView):
         docs = es.search(
             index='dictionary',
             body={
+                "from" : 0, "size" : 100,
                 "query": {
                     "multi_match": {
                         "query": search_word,
@@ -32,8 +33,6 @@ class SearchView(APIView):
                 }
             })
 
-        data_list = []
-        for data in docs['hits']['hits']:
-            data_list.append(data.get('_source'))
+        data_list = docs['hits']
 
         return Response(data_list)
