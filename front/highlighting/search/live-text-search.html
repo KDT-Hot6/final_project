@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+
 <title>On-Page Text Search</title>
 
 <style type="text/css">
@@ -17,8 +20,13 @@
     
 }
 .restaurant {
-    border: 1px solid black;
+    border: 2px solid coral;
     border-radius: 5px;
+    margin: 2% 15%;
+    background-color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* background-color: coral; */
+    /* color: white; */
 }
 .highlight {
     padding:1px 4px;
@@ -28,18 +36,30 @@
     background-color: coral;
     color: white;
 }
+body{
+    background-color: coral;
+}
+.tag{
+    border: 1px solid coral;
+    border-radius: 50px;
+    background-color: coral;
+    color : white;
+}
 </style>
 
 </head>
 
 <body>
-
+<div class="search">
 Search: <input type="text" id="text-search" />
+</div>
 <div class="w3-container restaurant">
 
     <h2><span class='badge'>01</span>또순이네</h2>
+    
     <p>서울특별시 영등포구 선유로47길 16</p>
-    <p>#고기,#된장</p>
+    <p>&#127919;<span class="tag">#고기</span><span class="tag">#된장</span></p>
+    <hr/>
     <div>
     <button onclick="myFunction('Demo1')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
     </div>
