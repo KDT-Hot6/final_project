@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="alignpractice.css" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<title>On-Page Text Search</title>
+
+<style type="text/css">
+    @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+        .mainLoginInput{
+        height: 40px;
+        padding: 0px;
+        font-size: 30px;
+        margin: 5px 0;
+        }
+
+        .mainLoginInput::-webkit-input-placeholder { 
+        font-family: FontAwesome;
+        font-weight: normal;
+        overflow: visible;
+        vertical-align: top;
+        display: inline-block !important;
+        padding-left: 5px;
+        padding-top: 2px;
+        color: hsl(9, 40%, 60%);
+        }
+
+        .mainLoginInput::-moz-placeholder  { 
+        font-family: FontAwesome;
+        font-weight: normal;
+        overflow: visible;
+        vertical-align: top;
+        display: inline-block !important;
+        padding-left: 5px;
+        padding-top: 2px;
+        color: hsl(9, 40%, 60%);
+        }
+
+        .mainLoginInput:-ms-input-placeholder  { 
+        font-family: FontAwesome;
+        font-weight: normal;
+        overflow: visible;
+        vertical-align: top;
+        display: inline-block !important;
+        padding-left: 5px;
+        padding-top: 2px;
+        color: hsl(9, 40%, 60%);
+        }
+
+    h1 {
+        text-align: center;
+        margin-top : 180px;
+        font-size: 100px;
+    }
+
+    h1 span:nth-child(1) {
+        color:#4285f4;
+    }
+
+    h1 span:nth-child(2) {
+        color:#ea4335;
+    }
+
+    h1 span:nth-child(3) {
+        color:#fbbc05;
+    }
+
+    h1 span:nth-child(4) {
+        color:#4285f4;
+    }
+
+    h1 span:nth-child(5) {
+        color:#34a853;
+    }
+    
+    h1 span:nth-child(6) {
+        color:#ea4335;
+    }
+
+    .search {
+    position: relative;
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+    }
+
+    input {
+    width: 100%;
+    border: 1px solid #bbb;
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-family: fontAwesome;
+    }   
+
+    .fa-search {
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        margin: 0;
+        color: gray;
+        placeholder="&#61442
+    }
+
+    .fa-keyboard {
+        position: absolute;
+        right: 35px;
+        top: 25px;
+        color: gray;
+    }
+
+    .fa-microphone {
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        color: blue;
+    }
+
+    .boxs{
+        width: 130px;
+        
+       
+    }
+
+    #main{
+        padding : 10px 10px 10px 40px;
+        border-radius: 20px;
+    }
+
+
+    #sub1{
+        
+        border-radius: 5px;
+        background-color: gray;
+        background-color: rgba( 220, 220, 220, 0.2 );
+        border: 0px;
+        position: relative;
+        right: 80px;
+        width: 130px;
+        font-family: 'Nanum Gothic', sans-serif;
+        color:gray;
+        
+    }
+
+    #sub2{
+    
+        border-radius: 5px;
+        background-color: gray;
+        background-color: rgba( 220, 220, 220, 0.2 );
+        border: 0px;
+        position: relative;
+        left : 60px;
+        bottom : 62px;
+        font-family: 'Nanum Gothic', sans-serif;
+        color:gray;
+        
+    }
+    
+    .wrap{
+        width: 100%;
+    }
+
+   
+
+
+</style>
+
+   
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <h1>
+        <span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+    
+    <br></br>
+        <center>
+          
+        <div class="search">
+            <i class="fas fa-search" type="text" placeholder="&#61442;"></i>
+            <input id="main" type="text">
+            <i class="fas fa-keyboard"></i>
+            <i class="fas fa-microphone"></i>
+        </div>
+        
+    <div class="boxs">
+        <input id="sub1" type="button" class="box" value="Coogle 검색">
+        <input id="sub2" type="button" class="box" value="I'm still hungry">
+    </div>    
+        </center>
+    <br></br>
+
+ 
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
