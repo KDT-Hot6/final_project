@@ -1,0 +1,272 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+                invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+            }
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<title>On-Page Text Search</title>
+
+<style type="text/css">
+
+    .highlight {
+        background-color: #fff34d;
+        -moz-border-radius: 5px; /* FF1+ */
+        -webkit-border-radius: 5px; /* Saf3-4 */
+        border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+        /* -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); FF3.5+ */
+        /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); Saf3.0+, Chrome */
+        /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); Opera 10.5+, IE 9.0 */
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 130px;
+    }
+
+    h1 span:nth-child(1) {
+        color:#4285f4;
+    }
+
+    h1 span:nth-child(2) {
+        color:#ea4335;
+    }
+
+    h1 span:nth-child(3) {
+        color:#fbbc05;
+    }
+
+    h1 span:nth-child(4) {
+        color:#4285f4;
+    }
+
+    h1 span:nth-child(5) {
+        color:#34a853;
+    }
+    
+    h1 span:nth-child(6) {
+        color:#ea4335;
+    }
+
+    .wrap {
+        width: 1000px;
+        margin: auto;        
+    }
+
+    .res_name{
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size : 40px;
+        font-weight : bolder;
+    }
+
+    }
+    .highlight {
+        padding:1px 4px;
+        margin:0 -4px;
+    }
+
+    .badge{
+        background-color: coral;
+        color: white;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-weight : bolder;
+        font-size : 30px;
+    }
+
+    .res_address{
+        margin-top : 10px;
+    }
+
+    .keytag{
+        font-family: 'Nanum Pen Script', cursive;
+        font-size : 25px;    
+    }
+
+    }  
+    .card-body {
+        height : 400px;
+        border: 1px solid #E6E6E6 ;
+        border-width : 2px 5px 5px 2px;
+        border-radius: 10px;
+        margin : 2% 40%;
+        font-family: 'Nanum Gothic', sans-serif;   
+    }
+
+    .card {
+        box-shadow: 10px 10px 5px 1px rgba(100, 100, 100, 0.26);
+    }
+
+
+    #cards-box { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
+    #cards-box { -webkit-column-gap: 30px; -moz-column-gap: 30px; column-gap: 30px; }
+
+</style>
+
+   
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <h1>
+        <span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+    
+    <br></br>
+        <center>
+            <form method=get action="http://www.google.co.kr/search" target="_blank" >
+                <table bgcolor="#FFFFFF">
+                    <tr>
+                    <td>
+                        <input type=text name=q size=40 maxlength=300 placeholder=" 검색 문장 입력" style=font-size:18pt value="" />
+                        <input type=hidden name=ie value=utf-8/>
+                        <input type=hidden name=oe value=utf-8/>
+                        <input type=hidden name=hl value=ko />
+                        <input type=submit name=btnG style=font-size:18pt value="Coogle 검색" />
+                    </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    <br></br>
+
+    <div id="cards-box" class="card-columns">
+
+        <div class="card">
+            <div class="card-body" >  
+                <div class="res_name"><span class='badge'>01</span> 또순이네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt"></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <hr/>
+
+                <div>
+
+                
+                <div class="review01">고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛
+                    <button onclick="myFunction('Demo1')" class="w3-button w3-white w3-white w3-left-align">...</button> 
+                </div>
+
+                
+                <div id="Demo1" class="w3-hide w3-container">
+                    <p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+                        그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+                        또 갈거다</p>
+                </div>
+                
+                <div class="review02">고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛
+                    <button onclick="myFunction('Demo2')" class="w3-button w3-white w3-white w3-left-align">...</button> 
+                </div>
+            
+                </div>
+                <div id="Demo2" class="w3-hide w3-container">
+                    <p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+                        그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+                        또 갈거다</p>
+                </div>
+    
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-body">  
+                <div class="res_name"><span class='badge'>02</span> 석영이네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt" ></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <p class="review"> 증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">  
+                <div class="res_name"><span class='badge'>03</span> 진섭이네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt" ></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <p class="review">증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">  
+                <div class="res_name"><span class='badge'>04</span> 응민이네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt" ></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <p class="review"> 증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">  
+                <div class="res_name"><span class='badge'>05</span> 재희네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt" ></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <p class="review">증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">  
+                <div class="res_name"><span class='badge'>06</span> 병헌이네</div>
+                <p class="res_address"><i class="fas fa-map-marker-alt" ></i> 서울특별시 영등포구 선유로47길 16</p>
+                <p class="keytag"><i class="fas fa-tags" ></i> #고기 #된장</p>
+                <p class="review">증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

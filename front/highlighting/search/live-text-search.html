@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>On-Page Text Search</title>
+
+<style type="text/css">
+.highlight {
+    background-color: #fff34d;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    /* -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); FF3.5+ */
+    /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); Saf3.0+, Chrome */
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); Opera 10.5+, IE 9.0 */
+    
+}
+.restaurant {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.highlight {
+    padding:1px 4px;
+    margin:0 -4px;
+}
+.badge{
+    background-color: coral;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+Search: <input type="text" id="text-search" />
+<div class="w3-container restaurant">
+
+    <h2><span class='badge'>01</span>또순이네</h2>
+    <p>서울특별시 영등포구 선유로47길 16</p>
+    <p>#고기,#된장</p>
+    <div>
+    <button onclick="myFunction('Demo1')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+    </div>
+    <div id="Demo1" class="w3-hide w3-container">
+        <p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+    </div>
+    
+    <div>
+    <button onclick="myFunction('Demo2')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+    <div>
+    <div id="Demo2" class="w3-hide w3-container">
+        <p><p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+          그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+          또 갈거다</p></p>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="w3-container restaurant">
+
+    <h2><span class='badge'>02</span>다른 가게</h2>
+    <p>서울특별시 영등포구 선유로47길 16</p>
+    <p>#고기,#된장</p>
+    <div>
+    <button onclick="myFunction('Demo3')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+    </div>
+    <div id="Demo3" class="w3-hide w3-container">
+        <p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+            그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+            또 갈거다</p>
+    </div>
+    
+    <div>
+    <button onclick="myFunction('Demo4')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+    <div>
+    <div id="Demo4" class="w3-hide w3-container">
+        <p><p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+          그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+          또 갈거다</p></p>
+    </div>
+    </div>
+    </div>
+</div>
+    <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-white", "w3-red");
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace("w3-red", "w3-white");
+      }
+    }
+    </script>
+
+<!-- <p><b>Web development</b> is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). This can include web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development. However, among web professionals, "web development" usually refers to the main non-design aspects of building web sites: writing markup and coding. Web development can range from developing the simplest static single page of plain text to the most complex web-based internet applications, electronic businesses, or social ntwork services.</p>
+<p>For larger organizations and businesses, web development teams can consist of hundreds of people (web developers). Smaller organizations may only require a single permanent or contracting webaster, or secondary assignment to related job positions such as a graphic designer and/or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department.</p>
+
+(Text from Wikipedia)
+More script and css style -->
+<!-- : <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
+"></script>
+<script type="text/javascript" src="highlight.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#text-search').bind('keyup change', function(ev) {
+        // pull in the new value
+        var searchTerm = $(this).val();
+
+        // remove any old highlighted terms
+        $('body').removeHighlight();
+
+        // disable highlighting if empty
+        if ( searchTerm ) {
+            // highlight the new term
+            $('body').highlight( searchTerm );
+        }
+    });
+});
+</script>
+
+</body>
+</html>

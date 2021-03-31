@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .DS_Store
 =======
 mysql_auth.py
 >>>>>>> d14e98374fa341d909e5e9825c9895c42803d91d
+=======
+mysql_auth.py
+data/
+>>>>>>> 41015f792106916e5e423d1a9e503d223f2a47e6

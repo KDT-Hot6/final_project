@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+
+<h2>또순이네</h2>
+<p>서울특별시 영등포구 선유로47길 16</p>
+
+<div>
+<button onclick="myFunction('Demo1')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+</div>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+        그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+        또 갈거다</p>
+</div>
+
+<div>
+<button onclick="myFunction('Demo2')" class="w3-button w3-white w3-white w3-left-align">...고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛...</button>
+<div>
+<div id="Demo2" class="w3-hide w3-container">
+    <p><p>증정 꼬북칩을 사기위해 두루마리휴지를 사가는 인간의 심리처럼 점심시간 후에는 짤없이 고기를 시켜야 된장을 맛볼 수 있다. 그러기에 등심을 시켜야 하는데, 생등심이 없고 주물럭만 있는 경우가 빈번하다. 이모들도 자꾸 반찬이나 집게따위를 노룩패스 해주신다. 음료 주문은 자꾸 안들어간다.
+      그럼에도 불구하고 된장찌개를 먹기 위해 온다. 왜냐하면 그럴만한 맛이다. 고기는 참 그렇지만.. 된장이 훌륭하다. 술술 들어가는 감칠맛.
+      또 갈거다</p></p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-white", "w3-red");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-white");
+  }
+}
+</script>
+
+</body>
+</html>
