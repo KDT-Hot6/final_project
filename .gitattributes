@@ -1,3 +1,6 @@
 model/ filter=lfs diff=lfs merge=lfs -text
 data/ filter=lfs diff=lfs merge=lfs -text
 sentence_transformers/ filter=lfs diff=lfs merge=lfs -text
+data/** filter=lfs diff=lfs merge=lfs -text
+model/** filter=lfs diff=lfs merge=lfs -text
+sentence_transformers/** filter=lfs diff=lfs merge=lfs -text
