@@ -1,6 +1,8 @@
 # final\_project
 
-### Keyword extractor
+## Keyword extractor
+
+![KR-wordrank](https://user-images.githubusercontent.com/23492454/114338713-9c9b0b00-9b8e-11eb-9fa9-bb0194e4d36c.png)
 
 * pure Python code
 * author: Lovit \(Hyunjoong Kim\)
@@ -13,7 +15,7 @@
 * graph ranking 알고리즘을 사용하기 위해 substring graph를 생성합니다.  
 * 한국어 토크나이저 기능은 substring 그래프를 활용해 처리됩니다.  
 
-#### Code
+### Code
 
 `/keyword/key_sentences.py`에서 활용 예시들을 보실 수 있습니다.  
 
@@ -26,21 +28,23 @@ DATA_SAVE_PATH = '/home/ubuntu/hot6/data/hot6_db_keysentences_'+datetime.now().s
 도메인에 따라서 사용되는 stopwords가 변경되어야 좋은 키워드를 추출할 수 있습니다.    
 일반적으로 다른 리뷰들에서 반복되는 키워드들을 stopwords로 설정하면 준수한 성능을 보이는 것을 확인하실 수 있습니다. TF-IDF, BM25 알고리즘 등을 활용하실 수도 있습니다.  
 
-#### Setup
+### Setup
 
 ```text
 pip install krwordrank
 ```
 
-#### Requirements
+### Requirements
 
 * Python &gt;= 3.5
 * numpy
 * scipy
 
-### SentenceBERT
+## SentenceBERT
 
 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks \(EMNLP 2019\) 논문, 직접 수집하고 제작한 음식점 리뷰 데이터를 통해 Korean Sentence BERT를 학습하였습니다.
+
+![sentenceBERT](https://user-images.githubusercontent.com/23492454/114338837-dcfa8900-9b8e-11eb-80b5-ad926c76582f.png)
 
 
 
